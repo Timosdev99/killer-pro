@@ -59,6 +59,30 @@ section {
     gap: 1rem;
 }
 
+@media only screen and (max-width: 425px) {
+  .hero-btns {
+    flex-direction: column;
+}
+
+h1 {
+  font-size: 220% !important;
+}
+
+.hero-text-section {
+  margin-top: 2rem;
+}
+
+.btn:link,
+.btn:visited {
+  padding: 10px 15px;
+}
+
+.section-grid {
+  grid-template-columns: auto;
+}
+  
+}
+
 h1 {
   color: white;
   font-size: 220% !important;
@@ -148,6 +172,8 @@ h2::after {
   border-radius: 200px;
   color: white;
   transition: background-color 0.5s, color 0.5s, border 0.5s;
+  text-wrap: nowrap;
+  text-align: center;
 }
 
 .real-btn:link,
@@ -183,9 +209,9 @@ h2::after {
 }
 
 .main-nav {
-  list-style: none;
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .main-nav li a:link,
@@ -203,8 +229,6 @@ h2::after {
 .main-nav,
 li {
   list-style: none;
-  display: inline-block;
-  /* margin-left: 40px; */
   color: white;
 }
 
@@ -499,6 +523,7 @@ cite img {
   background-color: white;
   color: black;
   border: 1px solid rgb(201, 152, 60);
+  display: flex;
   justify-content: center;
   transition: all 0.5s ease;
 }
